@@ -12,3 +12,12 @@ Bundan tashqari LinkedHashMap oddi HashMapdan farqi, u ma'lumotlarning insertion
 
 3-savol:
 Genericdan foydalanish bizga faqatgina bitta ma'lumot bilan emas, turli xil ma'lumotlar bilan ishlab, bir vaqtning o'zida type-safetyini ta'minlash uchun kerak. Biz genericlarsiz ham turli xil ma'lumotlar bilan ishlay olamiz. Buning uchun biz doimiy tarzda "casting" amalga oshirishimiz kerak bo'ladi. Va buning oqibatida dastur run bo'layotgan vaqtida "casting" exceptionini tashlashi mumkin, foydalanuvchining xatosi tufayli. Buning oldini olish uchun generic dan foydalanish tavsiya qilinadi, sababi generic bizga dastur run bo'lishidan oldin, compile timeda o'sha casting bo'lishdagi xatolarni ko'rsatib beradi.
+
+4-savol:
+Collection hierarchy -> Birinchi "Iterator" interface va unda "Collection" interfaci extend oladi. Collection Interfacidan 3xil boshqa interface extend oladi -> List, Map, Queue. 
+
+Listdan  ArrayList, LinkedList klasslari implement oladi.
+
+Mapdan HashMap, LinkedHashMap, HashSet implement oladi.(HashSet shuningdek "Set" interfaceidan ham implement oladi va LinkedHashMap linkedListdan ham implement oladi);
+
+Queuedan ArrayDeque, PriorityQueue implement oladi.
